@@ -24,18 +24,28 @@
 
 # Day 2 Objectives & Achievements
 
-1. **Read the NextAuth.js docs**  
-   - Review the Quickstart guide  
-   - Study the Google provider setup  
+1. **Read NextAuth.js & Google provider docs**  
+   - Quickstart guide  
+   - Google OAuth setup  
 
-2. **Implement Google OAuth**  
-   - Add NextAuth.js to the T3 app  
-   - Configure the Google provider
+2. **Set up Google OAuth credentials**  
+   - Configured consent screen in Google Cloud  
+   - Generated Client ID/Secret and added to `.env`  
 
-3. **Define initial Prisma models**  
-   - I want to get some basic initial Prisma models ready and in sync with Supabase so I can accelerate the next part of development
+3. **Integrate Auth.js v5 + PrismaAdapter**  
+   - Updated `src/env.js` schema with `GOOGLE_ID`/`GOOGLE_SECRET`  
+   - Created `src/app/api/auth/[...nextauth]/route.ts` with PrismaAdapter  
 
-4. **Smoke-test end-to-end**  
-   - Log in via Google  
-   - Call a simple tRPC query and render the result  
-   - Confirm a new Base persists in Supabase
+4. **Build sign-in UI & protect `/`**  
+   - Made `/login` page and `SignInModal` component  
+   - Made `/signup` page and `SignUpModal` component
+   - Redirected root (`/`) to `/login` when unauthenticated  
+
+5. **Smoke-test end-to-end**  
+   - Click “Sign in with Google” → Google consent → returned to app  
+   - Verified new rows in Supabase’s User, Account & Session tables  
+
+**Achievements:**  
+- Google OAuth flow working in development  
+- Sessions and users persisting correctly in Supabase  
+

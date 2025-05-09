@@ -1,18 +1,20 @@
+import Link from "next/link";
+
 import type { Metadata } from "next";
 import { auth } from "~/server/auth";
 import { api, HydrateClient } from "~/trpc/server";
-import SignUpForm from "../_components/SignUpForm";
+import SignInForm from "../_components/SignInForm";
 
 export const metadata: Metadata = {
-    title: "Sign up - Airtable",
+    title: "Sign in - Airtable",
 };
 
-const SignUpPage = async () => {
+const LoginPage = async () => {
     return (
         <HydrateClient>
-            <SignUpForm />
+            <SignInForm />
         </HydrateClient>
     );
 }
 
-export default SignUpPage;
+export default LoginPage;

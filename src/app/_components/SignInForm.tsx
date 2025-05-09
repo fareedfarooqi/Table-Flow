@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { auth } from "~/server/auth";
 import { api, HydrateClient } from "~/trpc/server";
+import GoogleButton from "./GoogleButton";
 
 const SignInForm = async () => {
   const session = await auth();
@@ -18,7 +19,7 @@ const SignInForm = async () => {
             <div className="flex items-center justify-center flex-col w-full">
                 <img src="/airtable-full-inline.svg" alt="" className="w-30" />
                 <div className="font-medium text-3xl mt-5">Sign In</div>
-                <p className="text-[1.1rem] mt-2">or <span className="text-blue-500 underline hover:text-blue-600 hover:no-underline cursor-pointer">create an account</span></p>
+                <p className="text-[1.1rem] mt-2">or <Link href="/signup" className="text-blue-500 underline hover:text-blue-600 hover:no-underline cursor-pointer">create an account</Link></p>
             </div>
 
                 <div className="mt-5 w-1/6 flex flex-col gap-2">
@@ -40,11 +41,7 @@ const SignInForm = async () => {
                 </div>
 
                 <div className="flex items-center justify-center w-1/6 flex-col gap-5">
-                <button 
-                    className="flex items-center justify-center border w-full py-[0.35rem] px-4 text-lg gap-3 border-gray-300 rounded-xl hover:bg-[#f4f4f4] hover:border-black cursor-pointer shadow">
-                    <img src="/Google-Logo.svg" alt="" className="w-5" />
-                    Sign in with Google
-                </button>
+                <GoogleButton />
 
                 <button 
                     className="flex items-center justify-center border w-full py-[0.35rem] px-4 text-lg gap-3 border-gray-300 rounded-xl cursor-not-allowed shadow" disabled>
