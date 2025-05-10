@@ -1,4 +1,3 @@
-/*import { GoHome } from "react-icons/go";*/
 import { GrHomeRounded } from "react-icons/gr";
 import { PiUsersThree } from "react-icons/pi";
 import { LuBookOpen } from "react-icons/lu";
@@ -15,11 +14,13 @@ const SmallSidebar = () => {
                 <div className="border-t border-[#E9E9E9]"></div>
             </div>
 
-            <div className="space-y-6 mt-auto">
+            <div className="space-y-4 mt-auto">
                 <div className="border-t border-[#E9E9E9]"></div>
-                <LuBookOpen size={20} className="text-[#98999B] cursor-pointer" />
-                <PiShoppingBagOpen size={20} className="text-[#98999B] cursor-pointer" />
-                <TbWorld size={20} className="text-[#98999B] cursor-pointer" />
+                <div className="space-y-4 flex items-center justify-center flex-col mt-auto">
+                    <LuBookOpen size={15} className="text-[#98999B] cursor-pointer" />
+                    <PiShoppingBagOpen size={15} className="text-[#98999B] cursor-pointer" />
+                    <TbWorld size={15} className="text-[#98999B] cursor-pointer" />
+                </div>
                 <button className="shadow-[0_0_0_0.5px_#E3E3E3] rounded-sm p-1 text-[#98999B]">
                     <FiPlus />
                 </button>
