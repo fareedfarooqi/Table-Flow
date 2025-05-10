@@ -25,11 +25,11 @@ const Navbar: FC<NavbarProps> = ({ onToggle, initial, bgColor }) => {
 
       <div className="flex items-center justify-between w-[14%] px-4 py-2 bg-white border border-gray-200 shadow-sm rounded-full cursor-pointer hover:shadow-md">
         <div className="flex items-center space-x-2 text-gray-500 cursor-pointer">
-          <FiSearch size={12} className="text-black" />
+          <FiSearch size={12} className="text-black cursor-pointer" />
           <input
             type="text"
             placeholder="Search..."
-            className="outline-none border-none bg-transparent placeholder-gray-500 text-[0.75rem]"
+            className="outline-none border-none bg-transparent placeholder-gray-500 text-[0.75rem] cursor-pointer"
           />
         </div>
         <div className="hidden sm:flex items-center space-x-1 text-gray-400 text-[0.8rem] font-medium">
@@ -51,7 +51,7 @@ const Navbar: FC<NavbarProps> = ({ onToggle, initial, bgColor }) => {
               w-8 h-8 ${bgColor} rounded-full
               flex items-center justify-center
               text-white font-semibold text-sm
-              border border-white shadow-[0_0_0_1px_rgba(0,0,0,0.08)]
+              border border-white shadow-[0_0_0_1px_rgba(0,0,0,0.08)] cursor-pointer
             `}
           >
             {initial}
