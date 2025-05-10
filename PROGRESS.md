@@ -47,5 +47,31 @@
 
 **Achievements:**  
 - Google OAuth flow working in development  
-- Sessions and users persisting correctly in Supabase  
+- Sessions and users persisting correctly in Supabase
 
+# Day 3 Objectives & Achievements
+
+1. **Implement Navbar UI**  
+   - Created `Navbar` component with logo, search bar, help & notifications icons  
+   - Added Google-profile avatar placeholder with random background color  
+
+2. **Build Sidebar variants**  
+   - Developed `SmallSidebar` (collapsed, icon-only)  
+   - Developed `BigSidebar` (expanded and full labels)  
+
+3. **Add collapse/expand toggle**  
+   - Wired up hamburger button in `Navbar` to toggle sidebar state  
+   - Conditionally render small vs. big sidebar in `SidebarLayout`  
+
+4. **Wire up layout & routing**  
+   - Created `SidebarLayout` wrapper to hold navbar, sidebar, and main content  
+   - Wrapped home page in `SidebarLayout` and passed dashboard content as children  
+
+5. **Initial Dashboard MVP**  
+   - Stubbed out `Dashboard` view with header and placeholder text  
+   - Verified collapse/expand behavior and content shifting  
+
+**Achievements:**  
+- Fully functioning client-side collapse/expand sidebar button  
+- Reusable layout component rendering navbar, sidebar, and dashboard content  
+- Seamless integration of all components with Next.js App Router and Auth  
