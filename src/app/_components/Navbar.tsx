@@ -44,10 +44,10 @@ const Navbar = async () => {
 
     return (
         <HydrateClient>
-            <div className="bg-white px-3 py-2 shadow flex items-center justify-between">
+            <div className="bg-white px-3 py-3 shadow flex items-center justify-between">
                 <div className="flex items-center gap-5">
                     <TbMenu2 size={20} className="text-[#B2B3B5] hover:text-[#1D1F24] cursor-pointer" />
-                    <img src="/airtable-full-inline.svg" alt="" className="w-25" />
+                    <img src="/airtable-full-inline.svg" alt="" className="w-25 cursor-pointer" />
                 </div>
 
                 <div className="flex items-center justify-between w-[14%] px-4 py-2 bg-white border border-gray-200 shadow-sm rounded-full cursor-pointer hover:shadow-md">
