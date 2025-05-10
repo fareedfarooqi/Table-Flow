@@ -41,7 +41,7 @@ const SignInForm = async () => {
                 </div>
 
                 <div className="flex items-center justify-center w-1/6 flex-col gap-5">
-                <GoogleButton />
+                <GoogleButton loginPage={true} />
 
                 <button 
                     className="flex items-center justify-center border w-full py-[0.35rem] px-4 text-lg gap-3 border-gray-300 rounded-xl cursor-not-allowed shadow" disabled>

@@ -56,11 +56,7 @@ const SignUpForm = async () => {
                 >
                 Continue with Single Sign On
             </button>
-            <Link href="/api/auth/signin" className="flex items-center justify-center border w-full py-[0.35rem] px-4 text-lg gap-3 border-gray-300 rounded-md hover:bg-[#f4f4f4] hover:border-black cursor-pointer shadow">
-                <img src="/Google-Logo.svg" alt="Google" className="w-5" />
-                Continue with Google
-            </Link>
-            {/*<GoogleButton /> */}
+            <GoogleButton loginPage={false} />
 
             <p className="cursor-not-allowed text-gray-600 text-sm">Continue with Apple ID</p>
         </div>
